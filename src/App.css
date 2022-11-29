@@ -23,7 +23,14 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+div {
+  box-sizing: border-box;
+}
+.list {
+  padding-left: 20px;
+  text-align: left;
+  border-bottom: 1px solid grey;
+}
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +42,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+.black-nav {
+  background: black;
+  width: 100%;
+  display: flex;
+  color: white;
+  padding: 20px;
+}
+.modal {
+  padding: 20px;
+  margin-top: 20px;
+  background: grey;
+  text-align: left;
 }
