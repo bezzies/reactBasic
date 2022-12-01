@@ -12,6 +12,7 @@ function App() {
   let toggle = () => {
     setModal(modal => !modal);
   }
+  let [입력값, 입력값변경] = useState(''); 
   let [title, setTitle] = useState(0);
 
 
@@ -46,6 +47,10 @@ function App() {
           )
         })
       }
+
+      <input onChange={(e)=>{ 입력값변경(e.target.value); 
+      console.log(입력값)}} />
+
       <button onClick={()=>{setTitle(0)}}>title0</button>
       <button onClick={()=>{setTitle(1)}}>title1</button>
       <button onClick={()=>{setTitle(2)}}>title2</button>
